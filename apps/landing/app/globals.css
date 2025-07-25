@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Ensure dark theme styles are applied */
+html {
+  background-color: rgb(17 24 39); /* gray-900 */
+  color: white;
+}
+
+body {
+  background-color: rgb(17 24 39); /* gray-900 */
+  color: white;
+}
+
+/* Force some critical styles as fallback */
+.bg-gray-900 {
+  background-color: rgb(17 24 39) !important;
+}
+
+.text-white {
+  color: white !important;
+}
+
+.flex {
+  display: flex !important;
+}
+
+.items-center {
+  align-items: center !important;
+}
+
+.justify-center {
+  justify-content: center !important;
+}
