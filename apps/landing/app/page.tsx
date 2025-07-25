@@ -30,7 +30,7 @@ export default function OA3LandingPage() {
           {/* Navigation to other apps */}
           <div className="flex flex-wrap justify-center gap-4 pt-8">
             <a 
-              href="/dashboard" 
+              href="/admin-dashboard" 
               className="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg text-white font-medium transition-colors"
             >
               Admin Dashboard
