@@ -1,0 +1,31 @@
+{
+  "name": "lab-oa3-io",
+  "version": "1.0.0",
+  "description": "OA3 Lab - Multi-project development workspace",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=apps/landing",
+    "dev:landing": "npm run dev --workspace=apps/landing",
+    "dev:dashboard": "npm run dev --workspace=apps/admin-dashboard", 
+    "dev:blog": "npm run dev --workspace=apps/blog-site",
+    "build": "npm run build:all",
+    "build:all": "npm run build --workspaces",
+    "build:landing": "npm run build --workspace=apps/landing",
+    "build:dashboard": "npm run build --workspace=apps/admin-dashboard",
+    "build:blog": "npm run build --workspace=apps/blog-site",
+    "lint": "npm run lint --workspaces",
+    "clean": "npm run clean --workspaces",
+    "install:all": "npm install && npm install --workspaces"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.8",
+    "typescript": "5.6.3"
+  },
+  "keywords": ["oa3", "lab", "web3", "ai", "monorepo"],
+  "author": "OA3 Lab",
+  "license": "MIT"
+}
