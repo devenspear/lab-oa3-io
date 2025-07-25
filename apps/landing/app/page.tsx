@@ -29,18 +29,14 @@ export default function OA3LandingPage() {
 
           {/* Navigation to other apps */}
           <div className="flex flex-wrap justify-center gap-4 pt-8">
-            <a 
-              href="/admin-dashboard" 
-              className="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg text-white font-medium transition-colors"
-            >
+            <div className="px-6 py-3 bg-gray-600 rounded-lg text-white font-medium opacity-75 cursor-not-allowed">
               Admin Dashboard
-            </a>
-            <a 
-              href="/blog" 
-              className="px-6 py-3 bg-purple-600 hover:bg-purple-700 rounded-lg text-white font-medium transition-colors"
-            >
+              <span className="block text-xs text-gray-300 mt-1">Coming Soon</span>
+            </div>
+            <div className="px-6 py-3 bg-gray-600 rounded-lg text-white font-medium opacity-75 cursor-not-allowed">
               Blog Site
-            </a>
+              <span className="block text-xs text-gray-300 mt-1">Coming Soon</span>
+            </div>
           </div>
 
           {/* Compelling Copy */}
