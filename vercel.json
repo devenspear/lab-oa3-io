@@ -1,0 +1,11 @@
+{
+  "buildCommand": "npm run build:landing",
+  "outputDirectory": "apps/landing/.next",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "functions": {
+    "apps/landing/app/**/*.js": {
+      "runtime": "nodejs18.x"
+    }
+  }
+} 
